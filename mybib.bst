@@ -1323,6 +1323,8 @@ FUNCTION {book}
   author empty$
 %    { format.editors "author and editor" output.check
 %    }
+    { "author and editor" output.check
+    }
     { format.authors output.nonnull
       crossref missing$
         { "author and editor" editor either.or.check }
